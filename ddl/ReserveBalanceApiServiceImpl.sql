@@ -1,0 +1,19 @@
+file -inlinebatch END_OF_BATCH
+
+-- patchReserveBalance
+DROP PROCEDURE ReserveBalanceApiServiceImpl_patchReserveBalance IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.ReserveBalanceApiServiceImpl_patchReserveBalance;
+-- createReserveBalance
+DROP PROCEDURE ReserveBalanceApiServiceImpl_createReserveBalance IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.ReserveBalanceApiServiceImpl_createReserveBalance;
+-- deleteReserveBalance
+DROP PROCEDURE ReserveBalanceApiServiceImpl_deleteReserveBalance IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.ReserveBalanceApiServiceImpl_deleteReserveBalance;
+-- retrieveReserveBalance
+DROP PROCEDURE ReserveBalanceApiServiceImpl_retrieveReserveBalance IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.ReserveBalanceApiServiceImpl_retrieveReserveBalance;
+-- listReserveBalance
+DROP PROCEDURE ReserveBalanceApiServiceImpl_listReserveBalance IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.ReserveBalanceApiServiceImpl_listReserveBalance;
+
+END_OF_BATCH

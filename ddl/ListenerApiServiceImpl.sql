@@ -1,0 +1,40 @@
+file -inlinebatch END_OF_BATCH
+
+-- listenToAdjustBalanceCancelEvent
+DROP PROCEDURE ListenerApiServiceImpl_listenToAdjustBalanceCancelEvent IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.ListenerApiServiceImpl_listenToAdjustBalanceCancelEvent;
+-- listenToAdjustBalanceCreateEvent
+DROP PROCEDURE ListenerApiServiceImpl_listenToAdjustBalanceCreateEvent IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.ListenerApiServiceImpl_listenToAdjustBalanceCreateEvent;
+-- listenToAdjustBalanceFailureEvent
+DROP PROCEDURE ListenerApiServiceImpl_listenToAdjustBalanceFailureEvent IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.ListenerApiServiceImpl_listenToAdjustBalanceFailureEvent;
+-- listenToReserveBalanceCancelEvent
+DROP PROCEDURE ListenerApiServiceImpl_listenToReserveBalanceCancelEvent IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.ListenerApiServiceImpl_listenToReserveBalanceCancelEvent;
+-- listenToReserveBalanceCreateEvent
+DROP PROCEDURE ListenerApiServiceImpl_listenToReserveBalanceCreateEvent IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.ListenerApiServiceImpl_listenToReserveBalanceCreateEvent;
+-- listenToReserveBalanceFailureEvent
+DROP PROCEDURE ListenerApiServiceImpl_listenToReserveBalanceFailureEvent IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.ListenerApiServiceImpl_listenToReserveBalanceFailureEvent;
+-- listenToTopupBalanceCancelEvent
+DROP PROCEDURE ListenerApiServiceImpl_listenToTopupBalanceCancelEvent IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.ListenerApiServiceImpl_listenToTopupBalanceCancelEvent;
+-- listenToTopupBalanceCreateEvent
+DROP PROCEDURE ListenerApiServiceImpl_listenToTopupBalanceCreateEvent IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.ListenerApiServiceImpl_listenToTopupBalanceCreateEvent;
+-- listenToTopupBalanceFailureEvent
+DROP PROCEDURE ListenerApiServiceImpl_listenToTopupBalanceFailureEvent IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.ListenerApiServiceImpl_listenToTopupBalanceFailureEvent;
+-- listenToTransferBalanceCancelEvent
+DROP PROCEDURE ListenerApiServiceImpl_listenToTransferBalanceCancelEvent IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.ListenerApiServiceImpl_listenToTransferBalanceCancelEvent;
+-- listenToTransferBalanceCreateEvent
+DROP PROCEDURE ListenerApiServiceImpl_listenToTransferBalanceCreateEvent IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.ListenerApiServiceImpl_listenToTransferBalanceCreateEvent;
+-- listenToTransferBalanceFailureEvent
+DROP PROCEDURE ListenerApiServiceImpl_listenToTransferBalanceFailureEvent IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.ListenerApiServiceImpl_listenToTransferBalanceFailureEvent;
+
+END_OF_BATCH

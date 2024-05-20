@@ -1,0 +1,19 @@
+file -inlinebatch END_OF_BATCH
+
+-- createAdjustBalance
+DROP PROCEDURE AdjustBalanceApiServiceImpl_createAdjustBalance IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.AdjustBalanceApiServiceImpl_createAdjustBalance;
+-- deleteAdjustBalance
+DROP PROCEDURE AdjustBalanceApiServiceImpl_deleteAdjustBalance IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.AdjustBalanceApiServiceImpl_deleteAdjustBalance;
+-- listAdjustBalance
+DROP PROCEDURE AdjustBalanceApiServiceImpl_listAdjustBalance IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.AdjustBalanceApiServiceImpl_listAdjustBalance;
+-- patchAdjustBalance
+DROP PROCEDURE AdjustBalanceApiServiceImpl_patchAdjustBalance IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.AdjustBalanceApiServiceImpl_patchAdjustBalance;
+-- retrieveAdjustBalance
+DROP PROCEDURE AdjustBalanceApiServiceImpl_retrieveAdjustBalance IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.AdjustBalanceApiServiceImpl_retrieveAdjustBalance;
+
+END_OF_BATCH

@@ -1,0 +1,19 @@
+file -inlinebatch END_OF_BATCH
+
+-- createTransferBalance
+DROP PROCEDURE TransferBalanceApiServiceImpl_createTransferBalance IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.TransferBalanceApiServiceImpl_createTransferBalance;
+-- deleteTransferBalance
+DROP PROCEDURE TransferBalanceApiServiceImpl_deleteTransferBalance IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.TransferBalanceApiServiceImpl_deleteTransferBalance;
+-- listTransferBalance
+DROP PROCEDURE TransferBalanceApiServiceImpl_listTransferBalance IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.TransferBalanceApiServiceImpl_listTransferBalance;
+-- patchTransferBalance
+DROP PROCEDURE TransferBalanceApiServiceImpl_patchTransferBalance IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.TransferBalanceApiServiceImpl_patchTransferBalance;
+-- retrieveTransferBalance
+DROP PROCEDURE TransferBalanceApiServiceImpl_retrieveTransferBalance IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.TransferBalanceApiServiceImpl_retrieveTransferBalance;
+
+END_OF_BATCH

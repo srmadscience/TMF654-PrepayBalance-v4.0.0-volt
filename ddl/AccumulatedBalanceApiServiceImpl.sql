@@ -1,0 +1,10 @@
+file -inlinebatch END_OF_BATCH
+
+-- listAccumulatedBalance
+DROP PROCEDURE AccumulatedBalanceApiServiceImpl_listAccumulatedBalance IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.AccumulatedBalanceApiServiceImpl_listAccumulatedBalance;
+-- retrieveAccumulatedBalance
+DROP PROCEDURE AccumulatedBalanceApiServiceImpl_retrieveAccumulatedBalance IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.AccumulatedBalanceApiServiceImpl_retrieveAccumulatedBalance;
+
+END_OF_BATCH

@@ -1,0 +1,10 @@
+file -inlinebatch END_OF_BATCH
+
+-- listBalanceActionHistory
+DROP PROCEDURE BalanceActionHistoryApiServiceImpl_listBalanceActionHistory IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.BalanceActionHistoryApiServiceImpl_listBalanceActionHistory;
+-- retrieveBalanceActionHistory
+DROP PROCEDURE BalanceActionHistoryApiServiceImpl_retrieveBalanceActionHistory IF EXISTS;
+CREATE PROCEDURE FROM CLASS api.BalanceActionHistoryApiServiceImpl_retrieveBalanceActionHistory;
+
+END_OF_BATCH
